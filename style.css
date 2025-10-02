@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  background: linear-gradient(90deg, #232526 60%, #414345 100%);
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.32);
+  background: #232526;
+  color: #f1f1f1;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+}
+
+.card-header {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #232526;
+  color: #ffc107;
+}
+
+.table {
+  background: #232526;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  color: #f1f1f1;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+  color: #f1f1f1;
+}
+
+.table th {
+  background: #343a40;
+  font-weight: 600;
+  color: #ffc107;
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #ffc107 60%, #ff9800 100%);
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #232526;
+}
+.btn-outline-success {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffc107;
+  border-color: #ffc107;
+}
+.btn-outline-success:hover {
+  background: #ffc107;
+  color: #232526;
+}
+
+footer {
+  background: #111;
+  color: #ffc107;
+  font-size: 1.1rem;
+  padding: 2rem 0 1rem 0;
+  letter-spacing: 1px;
+}
+
+/* Form background image styling */
+#tour-form-bg {
+  background-image: url('/Images/malte-schmidt-enGr5YbjQKQ-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  /* Ensure no inline or Bootstrap background-image is used in HTML */
+}
+
+#tour-form-bg form {
+  background: rgba(34,37,38,0.92);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.45);
+  color: #f1f1f1;
+}
+
+label {
+  font-weight: 600;
+  color: #ffc107;
+}
+
+input, select, textarea {
+  border-radius: 0.5rem !important;
+  background: #232526 !important;
+  color: #f1f1f1 !important;
+  border: 1px solid #444 !important;
+}
+
+@media (max-width: 768px) {
+  .card {
+    border-radius: 0.5rem;
+  }
+  .container {
+    padding: 0 0.5rem;
+  }
+  .carousel-caption {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+/* Section spacing */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Tour card custom style */
+.tour-card .card-title {
+  color: #ffc107;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.tour-card .card-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+.tour-card .badge {
+  font-size: 1rem;
+  padding: 0.5em 1em;
+  background: #ffc107;
+  color: #232526;
+}
